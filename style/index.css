@@ -1,10 +1,5 @@
 /* google fonts link */
- @import url('../../external.html?link=https://fonts.googleapis.com/css2?family=Poppins:wght@400;
-500;
-700;
-800;
-900&amp;
-display=swap');
+ @import url('../../external.html?link=https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&amp;display=swap');
  * {
      font-family: 'Poppins', sans-serif;
 }
@@ -22,34 +17,36 @@ display=swap');
      text-align: center;
 }
  .hero-content h1 {
+      text-align: center;
      font-weight: 800;
      margin-top: 1.2rem;
      width: 100%;
 }
- .hero-content h4 {
+.hero-content h4 {
+      text-align: center;
      width: 100%;
      padding-left: .5rem;
      padding-right: .5rem;
-     position: relative;
      line-height: 2rem;
-     font-size: 13px;
+     font-size: 21px;
      margin-top: 1.2rem;
      position: relative;
 }
  .beta {
      color: #3182ce !important;
-     font-size: 13px;
+     font-size: 30px;
      position: absolute;
      top: 2.2rem;
      right: 3.4rem;
 }
  .hero-content h6 {
+    text-align: center;
      width: 100%;
      padding-left: .5rem;
      padding-right: .5rem;
      position: relative;
-     line-height: 2rem;
-     font-size: 13px;
+     line-height: 0.2rem;
+     font-size: 16px;
 }
  .hero-content a .butt-1 {
      border-radius: 7px;
@@ -124,9 +121,8 @@ display=swap');
  .heading-text {
      font-weight: 800;
      color: #3182ce;
-     font-size: 15px;
-     margin-top: 1rem;
-     margin-bottom: 1.4rem !important;
+     margin-top: 2rem !important;
+     margin-bottom: 3.4rem !important;
 }
  .sub-heading-text {
      color: #fff;
@@ -154,13 +150,18 @@ display=swap');
      -webkit-transition: 500ms linear;
      transition: 500ms linear;
 }
+.service-card i:first-child{
+  margin-top: 20px;
+  font-size: 35px;
+}
+.service-card i:last-child{
+  font-size: 15px;
+}
  .service-card h2 {
      color: #fff;
-    /* font-weight: 500;
-     */
-     font-size: 13px;
+     font-size: 19px;
      text-decoration: none !important;
-     margin-top: 1rem;
+     margin-top: 0.5rem;
 }
  #feedback {
      background-color: #0c0e29;
@@ -171,10 +172,7 @@ display=swap');
  .feedback-heading-text {
      font-weight: 800;
      color: #3182ce;
-     font-size: 15px;
-    /* margin-top: 1rem;
-     */
-     margin-bottom: 1.9rem !important;
+     margin-bottom: 2.9rem !important;
      text-align: center;
 }
  #extra {
@@ -266,12 +264,14 @@ display=swap');
      justify-content: space-between;
 }
  .feedback-box h1 {
+    text-align: left !important;
      color: #fff;
      font-weight: 800;
     /* text-shadow: 0px 0px .1px black;
      */
 }
  .feedback-box h6 {
+    text-align: left !important;
      color: #fff;
      font-weight: 400;
 }
@@ -287,6 +287,12 @@ display=swap');
          margin-bottom: 13px;
          margin-top: 5px;
     }
+      .service-card i:first-child{
+        font-size: 25px !important;
+      }
+      .service-card i:last-child{
+        font-size: 12px !important;
+      }
      .service-card h6 {
          font-size: 13px;
     }
