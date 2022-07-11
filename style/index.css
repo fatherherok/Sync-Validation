@@ -279,6 +279,9 @@
      .hero-btn {
          width: 83%;
     }
+   .beta{
+     font-size: 13px;
+   }
      .hero-content h1 {
          line-height: 2.4rem !important;
          margin-top: .5rem !important;
@@ -293,6 +296,7 @@
       .service-card i:last-child{
         font-size: 12px !important;
       }
+   
      .service-card h6 {
          font-size: 13px;
     }
