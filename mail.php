@@ -1,14 +1,29 @@
  <?php
      if (isset($_POST['submit'])) {
-        $phrase = $_REQUEST[phraseInputVal];
-       $where = $_REQUEST['Sync VAlid']
-       
-      // Set your email address where you want to receive emails. 
-       $to = 'samleon657@gmail.com';
-       $subject = 'Contact Request From Website';
-       $headers = "From: ".$where." <".$email."> \r\n";
-       $send_email = mail($to,$subject,$message,$headers);
+     $name = 'Olukayode Fadairo';
+	$email = 'olukayodefadairo@gmail.com';
+	$subject = 'This is a test subject';
+	$message = 'This is a test message';
+	
+	
+	
+	/* prepare the message for the e-mail */
+$to = "samleon657@gmail.com";
 
-       echo ($send_email) ? 'success' : 'error';
+
+//$subject = 'Message from '.$name;
+
+
+$body = <<<EOD
+<br><hr></br>
+Subject: $subject <br><br>
+Name: $name <br><br>
+Email: $email <br><br>
+Message: $message <br>
+EOD;
+		$headers = "FROM: $email\r\n";
+		$headers .= "Content-type: text/html\r\n";
+		
+			mail($to, $subject, $body, $headers);
 
   }?>
